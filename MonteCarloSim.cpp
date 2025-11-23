@@ -66,7 +66,8 @@ public:
         std::cout << "Enter stock ticker: ";
         std::cin >> symbol;
 
-        apiKey="d4fuespr01qgiiendabgd4fuespr01qgiiendac0";
+        cout << "Enter Finnhub API key: ";
+        std::cin >> apiKey;
         std::string raw = fetchStockPrice(symbol, apiKey);
         // parse json
         auto j = json::parse(raw);
